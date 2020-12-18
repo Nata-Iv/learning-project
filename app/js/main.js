@@ -1,8 +1,6 @@
 $(function() {
-$("#nav_toggle").on("click", function(event) {
-    event.preventDefault();
-
-    $(this).toggleClass("active");
-    $("#nav").toggleClass("active");
-}); 
+    $('.header__burger').click(function(event) {
+        $('.header__burger,.menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    }); 
 });
